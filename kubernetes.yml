@@ -42,7 +42,7 @@
       - kubelet
       - kubeadm
       - kubectl
-      - docker-ce=18.06.2~ce~3-0~ubuntu
+      - docker
     become: true
   - name: added some condent
     template:
