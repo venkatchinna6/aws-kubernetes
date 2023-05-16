@@ -94,6 +94,6 @@ resource "aws_instance" "instance" {
 
 resource "null_resource" "example1" {
   provisioner "local-exec" {
-    command = "sleep 120; ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -u ubuntu --private-key key/auth_key -i hosts kubernetes.yml"
+    command = "sleep 100; ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -u ubuntu --private-key key/auth_key -i hosts kubernetes.yml"
     }
 }
