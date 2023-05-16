@@ -131,7 +131,7 @@
     when: ansible_hostname == "node"
   - name: node add execution take some few seconds
     pause:
-      minutes: 5
+      minutes: 3
   - name: deployment file move to master server 
     copy:
       src: ./k8s/{{item}}
